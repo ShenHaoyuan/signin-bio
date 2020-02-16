@@ -9,8 +9,9 @@
     <div style="text-align: center;">
         <span style="text-align: center;">签到人：</span>
     	<span style="text-align: center;" id="signName"></span>
-    	<input type="button" name="signin" onclick="signin()" id="signin" value="签到" />
-    	<input type="button" name="signout" onclick="signout()" id="signout" value="签退" />
+    	<input disabled="true" type="button" name="signin" onclick="signin()" id="signin" value="签到" />
+    	<input disabled="true" type="button" name="signout" onclick="signout()" id="signout" value="签退" />
+        <span>暂未开放</span>
     </div>
 
     <ul type="none">
@@ -64,12 +65,13 @@
 		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="朱翀" />朱翀
 		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="罗曼琳" />罗曼琳
 		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="吴淑珍" />吴淑珍
-		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="李毅" />李毅
-       		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="朱穗研" />朱穗研
+        <br><input type="radio" name="name" onclick="selectName()" style="" id="" value="李毅" />李毅
+        <br><input type="radio" name="name" onclick="selectName()" style="" id="" value="朱穗研" />朱穗研
 		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="王誉霖" />王誉霖
+				
     </ul>
-    <p style="color: #aaa;font-size: 10px;text-align: right;float: right;">©2020 Hoyin.</p>
-    <p style="color: #aaa;font-size: 10px;text-align: right;float: right;">All Rights Reserved.</p>
+    <span style="color: #aaa;font-size: 10px;text-align: right;float: right;">©2020 Hoyin. All Rights Reserved.</span>
+    <span style="color: #aaa;font-size: 10px;text-align: right;float: right;">All Rights Reserved.</span>
     <script type="text/javascript">
     	
     	function selectName(){
@@ -125,15 +127,14 @@
                 async:false,           //是否异步请求
                 success: function(jsonData) {
 					console.log(jsonData);
-                 //发送请求数据，返回数据，进行处理
-
-                       
+                 //发送请求数据，返回数据，进行处理    
 
                 }
 			});
 			alert("成功提交签退信息！");
 			
     	}
+
     </script>
 </head>
 <body>
