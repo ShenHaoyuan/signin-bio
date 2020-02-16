@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+    <title>签嘞个到</title>
+    <h1 style="text-align: center;">签嘞个到[生物]</h1>
+    <div style="text-align: center;">
+        <span style="text-align: center;">签到人：</span>
+    	<span style="text-align: center;" id="signName"></span>
+    	<input type="button" name="signin" onclick="signin()" id="signin" value="签到" />
+    	<input type="button" name="signout" onclick="signout()" id="signout" value="签退" />
+    </div>
+
+    <ul type="none">
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="蔡可芊" />蔡可芊
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="曾家民" />曾家民
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="曾亮" />曾亮
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="陈嫦彬" />陈嫦彬
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="陈懿霆" />陈懿霆
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="陈颍钏" />陈颍钏
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="朱颖欣" />朱颖欣
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="陈紫言" />陈紫言
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="代月" />代月
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="邱圣钧" />邱圣钧
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="管浩翔" />管浩翔
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="何新强" />何新强
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="何湛锐" />何湛锐
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="黄进楠" />黄进楠
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="黄睿姝" />黄睿姝
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="黄梓洋" />黄梓洋
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="李淑铭" />李淑铭
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="林天明" />林天明
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="刘琛" />刘琛
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="刘慧" />刘慧
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="刘祖森" />刘祖森
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="卢嘉儿" />卢嘉儿
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="卢静仪" />卢静仪
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="罗凡懿" />罗凡懿
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="罗淦元" />罗淦元
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="莫静欣" />莫静欣
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="莫蕴晴" />莫蕴晴
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="欧阳靖" />欧阳靖
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="彭吴杰" />彭吴杰
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="邱婧" />邱婧
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="沈灏源" />沈灏源
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="沈圣越" />沈圣越
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="宋沛壕" />宋沛壕
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="宋雨键" />宋雨键
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="万谨豪" />万谨豪
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="王祐成" />王祐成
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="吴健豪" />吴健豪
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="伍凯悦" />伍凯悦
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="谢鹏星" />谢鹏星
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="徐晓怡" />徐晓怡
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="杨颂彬" />杨颂彬
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="杨阳" />杨阳
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="俞博文" />俞博文
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="张心如" />张心如
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="张子幸" />张子幸
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="张子怡" />张子怡
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="钟伟锋" />钟伟锋
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="朱翀" />朱翀
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="罗曼琳" />罗曼琳
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="吴淑珍" />吴淑珍
+		<br><input type="radio" name="name" onclick="selectName()" style="" id="" value="李毅" />李毅
+				
+    </ul>
+    <script type="text/javascript">
+    	
+    	function selectName(){
+    		for (var i = 0;i < 51;i++) {
+    			if(document.getElementsByTagName("ul")[0].getElementsByTagName("input")[i].checked){
+    				document.getElementById("signName").innerHTML = document.getElementsByTagName("ul")[0].getElementsByTagName("input")[i].value;
+    			}
+    		}
+    	}
+    	
+    	function signin(){
+    		var param = {
+    			user: "signbyhy",
+    			secret: "8dd305f7",
+    			action: "update",
+    			tag: document.getElementById("signName").innerHTML,
+    			value: "1"
+    			};
+    		
+    		$.ajax({
+                type: "post",         //指定发送类型
+                url: "http://tinywebdb.appinventor.space/api",                 //指定ip地址或者其他请求路径
+                dataType: "jsonp", //返回的数据类型，设置为JSONP方式
+                data: param,         //可以是发送参数或者其他数据
+                jsonp: "callback",  //设置回调函数名，传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+                async:false,           //是否异步请求
+                success: function(jsonData) {
+					console.log(jsonData);
+                 //发送请求数据，返回数据，进行处理
+
+                       
+
+                }
+			});
+			alert("成功提交签到信息！");
+    	}
+    	
+   		function signout(){
+    		var param = {
+    			user: "signbyhy",
+    			secret: "8dd305f7",
+    			action: "update",
+    			tag: document.getElementById("signName").innerHTML,
+    			value: "0"
+    			};
+    		
+    		$.ajax({
+                type: "post",         //指定发送类型
+                url: "http://tinywebdb.appinventor.space/api",                 //指定ip地址或者其他请求路径
+                dataType: "jsonp", //返回的数据类型，设置为JSONP方式
+                data: param,         //可以是发送参数或者其他数据
+                jsonp: "callback",  //设置回调函数名，传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+                async:false,           //是否异步请求
+                success: function(jsonData) {
+					console.log(jsonData);
+                 //发送请求数据，返回数据，进行处理
+
+                       
+
+                }
+			});
+			alert("成功提交签退信息！");
+			
+    	}
+    </script>
+</head>
+<body>
+	
+</body>
+</html>
